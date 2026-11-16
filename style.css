@@ -161,3 +161,14 @@ input:invalid:not(:placeholder-shown){border-color:#b3261e}
   .mainnav .nav .sub a{color:#fff;padding:.45rem 0}
   .mainnav .nav .sub a:hover{background:none;text-decoration:underline}
 }
+
+/* ---- Images inside the Programs dropdown ---- */
+.sub{min-width:260px}
+.mainnav .nav .sub a{display:flex;align-items:center;gap:.8rem}
+.sub img{width:56px;height:56px;border-radius:8px;object-fit:cover;flex:none;background:var(--paper)}
+@media(max-width:860px){.sub img{width:44px;height:44px}}
+
+/* ---- Image next to a program card title ---- */
+.card-head{display:flex;align-items:center;gap:.8rem;margin-bottom:.5rem}
+.card-head h3{margin:0}
+.card-head img{width:56px;height:56px;border-radius:8px;object-fit:cover;flex:none;background:var(--paper)}
