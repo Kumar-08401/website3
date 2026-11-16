@@ -13,18 +13,6 @@
     nav.classList.remove('open'); btn.setAttribute('aria-expanded', false);
   }));
 
-  /* Hero slider */
-  const slides = $$('.slide'); let i = 0, timer;
-  const show = n => {
-    slides[i].classList.remove('active');
-    i = (n + slides.length) % slides.length;
-    slides[i].classList.add('active');
-  };
-  const play = () => { clearInterval(timer); timer = setInterval(() => show(i + 1), 6000); };
-  $('#next').onclick = () => { show(i + 1); play(); };
-  $('#prev').onclick = () => { show(i - 1); play(); };
-  if (!matchMedia('(prefers-reduced-motion: reduce)').matches) play();
-
   /* Count-up stats */
   const io = new IntersectionObserver(es => es.forEach(e => {
     if (!e.isIntersecting) return;
