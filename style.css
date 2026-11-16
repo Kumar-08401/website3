@@ -19,10 +19,10 @@ a{color:var(--accent)}
 .topbar .people .avatar::before{font-size:.95rem}
 .topbar .people b{font-size:.85rem;display:block;line-height:1.2}
 .topbar .people div span{font-size:.75rem;color:var(--muted)}
-/*mycode*/
+
 .util{display:flex;gap:1.25rem;align-items:flex-start}
 .util a{display:flex;flex-direction:column;align-items:center;gap:.25rem;text-align:center;text-decoration:none}
-.util img{width:60px;height:60px;border-radius:50%;object-fit:cover}
+.util img{width:40px;height:40px;border-radius:50%;object-fit:cover}
 .util span{font-size:.75rem;color:var(--muted);line-height:1.2;max-width:80px}
 /*mycode*/
 
