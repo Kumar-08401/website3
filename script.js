@@ -9,7 +9,7 @@
     const open = nav.classList.toggle('open');
     btn.setAttribute('aria-expanded', open);
   });
-  $$('#nav a').forEach(a => a.addEventListener('click', () => {
+  $$('#nav a:not(.sub-toggle)').forEach(a => a.addEventListener('click', () => {
     nav.classList.remove('open'); btn.setAttribute('aria-expanded', false);
   }));
 
@@ -82,4 +82,12 @@
     msg.textContent = 'Thanks. We will call you within one working day.';
     f.reset();
   });
+
+  /* Programs dropdown: tap to open on mobile */
+  $$('.sub-toggle').forEach(t => t.addEventListener('click', e => {
+    if (!matchMedia('(max-width: 860px)').matches) return;
+    e.preventDefault();
+    const open = t.parentElement.classList.toggle('open');
+    t.setAttribute('aria-expanded', open);
+  }));
 })();
