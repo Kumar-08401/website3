@@ -92,7 +92,7 @@ input:invalid:not(:placeholder-shown){border-color:#b3261e}
 .enq:hover{background:#d9650f}
 .mainnav{background:#0b7bbd}
 .mn-in{display:flex;justify-content:center;min-height:44px;align-items:center}
-.mainnav .nav{display:flex;gap:25rem;align-items:center;position:static;background:none;padding:0;border:0}
+.mainnav .nav{display:flex;gap:1.75rem;align-items:center;position:static;background:none;padding:0;border:0}
 .mainnav .nav a{color:#fff;font-size:10rem;font-weight:600;text-decoration:none}
 .mainnav .nav a:hover{text-decoration:underline;text-underline-offset:4px}
 .mainnav .menu-btn{display:none;color:#fff;border-color:#fff}
