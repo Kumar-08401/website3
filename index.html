@@ -1,1 +1,135 @@
-<!DOCTYPE html><!--6sBl0eqmgEEl43VwUQf8Q--><html lang="en"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="preload" href="/_next/static/media/1f3fe8c6df3d47c1-s.p.woff2" as="font" crossorigin="" type="font/woff2"/><link rel="preload" href="/_next/static/media/e4af272ccee01ff0-s.p.woff2" as="font" crossorigin="" type="font/woff2"/><link rel="preload" as="image" href="/optimised-images/icons/logo.svg"/></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Your Institute | Schools, Colleges and Coaching</title>
+<meta name="description" content="Replace with your own description.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container bar">
+    <a class="logo" href="#top">Your Institute</a>
+    <button class="menu-btn" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav id="nav" class="nav">
+      <a href="#programs">Programs</a>
+      <a href="#about">About</a>
+      <a href="#resources">Resources</a>
+      <a href="#branches">Branches</a>
+      <a href="#stories">Stories</a>
+      <a class="btn" href="#contact">Enquire now</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero" aria-roledescription="carousel" aria-label="Highlights">
+    <div class="slide active"><div class="container"><h1>Learning that starts with your goals</h1><p>From first classroom to final exam, we plan each year around the student.</p><a class="btn" href="#programs">See programs</a></div></div>
+    <div class="slide"><div class="container"><h2>Results you can check</h2><p>Publish your toppers, ranks and pass rates here.</p><a class="btn" href="#stories">Read student stories</a></div></div>
+    <div class="slide"><div class="container"><h2>Admissions are open</h2><p>Visit a branch or send an enquiry. We reply within one working day.</p><a class="btn" href="#contact">Send enquiry</a></div></div>
+    <div class="hero-ctrl">
+      <button id="prev" aria-label="Previous slide">&lsaquo;</button>
+      <button id="next" aria-label="Next slide">&rsaquo;</button>
+    </div>
+  </section>
+
+  <section class="stats">
+    <div class="container grid stats-grid">
+      <div><b data-count="600" data-suffix="K+">0</b><span>Learners each year</span></div>
+      <div><b data-count="950" data-suffix="+">0</b><span>Institutes</span></div>
+      <div><b data-count="23">0</b><span>States</span></div>
+      <div><b data-count="250" data-suffix="+">0</b><span>Cities</span></div>
+    </div>
+  </section>
+
+  <section id="programs" class="section">
+    <div class="container">
+      <h2>Programs</h2>
+      <p class="lead">One path from kindergarten to career. Edit these four to match what you offer.</p>
+      <div class="grid cards">
+        <article class="card"><h3>Schools</h3><p>Age-appropriate learning for all-round growth.</p><a href="#">Learn more</a></article>
+        <article class="card"><h3>Junior colleges</h3><p>Board and entrance exam preparation together.</p><a href="#">Learn more</a></article>
+        <article class="card"><h3>Coaching centres</h3><p>Focused training for engineering and medical entrance exams.</p><a href="#">Learn more</a></article>
+        <article class="card"><h3>Professional colleges</h3><p>Degrees built around real workplace skills.</p><a href="#">Learn more</a></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section alt">
+    <div class="container split">
+      <div>
+        <h2>About us</h2>
+        <p class="lead">Write two or three sentences on who you are, when you started and who you teach.</p>
+      </div>
+      <div class="vm">
+        <details open><summary>Vision</summary><p>One sentence on where you want students to get to.</p></details>
+        <details><summary>Mission</summary><p>How you plan to get them there: teaching, testing, mentoring.</p></details>
+        <details><summary>Who we are</summary><p>Your history, team size and reach.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section id="resources" class="section">
+    <div class="container">
+      <h2>Answer keys and papers</h2>
+      <div class="grid res">
+        <a class="res-item" href="#">Class 10 board paper</a>
+        <a class="res-item" href="#">Class 12 board paper</a>
+        <a class="res-item" href="#">JEE Main key</a>
+        <a class="res-item" href="#">NEET key</a>
+        <a class="res-item" href="#">Model papers</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="branches" class="section alt">
+    <div class="container">
+      <h2>Find a branch</h2>
+      <form class="finder" onsubmit="return false">
+        <label>Type<select id="fType"><option value="">Choose</option></select></label>
+        <label>State<select id="fState" disabled><option value="">Choose</option></select></label>
+        <label>City<select id="fCity" disabled><option value="">Choose</option></select></label>
+      </form>
+      <ul id="results" class="results" aria-live="polite"><li>Choose a type, state and city.</li></ul>
+    </div>
+  </section>
+
+  <section id="stories" class="section">
+    <div class="container">
+      <h2>Student stories</h2>
+      <div class="story-wrap">
+        <button id="sPrev" aria-label="Previous story">&lsaquo;</button>
+        <figure id="story"><blockquote></blockquote><figcaption></figcaption></figure>
+        <button id="sNext" aria-label="Next story">&rsaquo;</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section alt">
+    <div class="container narrow">
+      <h2>Admission enquiry</h2>
+      <form id="enquiry" class="form" novalidate>
+        <label>Name<input name="name" required autocomplete="name"></label>
+        <label>Phone<input name="phone" type="tel" required pattern="[0-9+ ]{10,14}" autocomplete="tel"></label>
+        <label>Email<input name="email" type="email" autocomplete="email"></label>
+        <label>Message<textarea name="msg" rows="3"></textarea></label>
+        <button class="btn" type="submit">Send enquiry</button>
+        <p id="formMsg" role="status"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container foot">
+    <div><b>Your Institute</b><p>Your tagline here.</p></div>
+    <div><a href="#programs">Programs</a><a href="#about">About</a><a href="#branches">Branches</a></div>
+    <div><a href="#">Terms</a><a href="#">Privacy</a><a href="#">Refunds</a></div>
+    <div><p>Your address</p><p>info@example.com</p><p>Phone number</p></div>
+  </div>
+  <p class="copy">&copy; 2026 Your Institute</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
