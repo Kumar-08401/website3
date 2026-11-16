@@ -1,0 +1,7 @@
+a .chevron-delay {
+    transition-delay: 0s
+}
+
+a:not(:hover) .chevron-delay {
+    transition-delay: .3s
+}
