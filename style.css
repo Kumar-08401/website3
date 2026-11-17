@@ -172,27 +172,54 @@ input:invalid:not(:placeholder-shown){border-color:#b3261e}
 .copy{text-align:center;margin-top:2rem;font-size:.9rem;color:#93a1b3}
 
 /* ===== Tablet and mobile ===== */
+/* ===== Tablet and mobile ===== */
 @media(max-width:860px){
- .cards,.foot{grid-template-columns:repeat(2,1fr)}
- .split{grid-template-columns:1fr;gap:1.5rem}
- .finder{grid-template-columns:1fr}
- .util{display:none}
- .topbar{justify-content:space-between}
- .brand img{height:32px}
- .menu-btn{display:block}
- .mainnav .nav{display:none;position:absolute;left:0;right:0;top:100%;flex-direction:column;background:var(--blue);padding:1rem 4%;z-index:30}
- .mainnav .nav.open{display:flex}
- .mainnav .nav>a,.mainnav .nav .sub-toggle{font-size:1.1rem;padding:.6rem 0;text-align:left}
- .mainnav .nav>a:hover,.mainnav .nav .sub-toggle:hover{background:none;text-decoration:underline}
- .has-sub{width:100%}
- .sub{position:static;box-shadow:none;background:transparent;padding:0 0 0 1rem}
- .mainnav .nav .sub a{color:#fff;padding:.45rem 0}
- .mainnav .nav .sub a:hover{background:none;text-decoration:underline}
- .sub img{width:44px;height:44px}
- .hs{padding:2.5rem 1.2rem 7rem}
- .hs-btn{display:none}
- .kpis{grid-template-columns:repeat(2,1fr)}
- .kpi:last-child{grid-column:1/-1}
+  html{scroll-padding-top:120px}
+
+  /* header: logo left, Enquire Now right */
+  .topbar{justify-content:space-between;min-height:56px;padding-block:.5rem}
+  .util{display:none}
+  .brand img{height:40px;width:auto}
+  .enq{padding:.65rem 1rem;font-size:.85rem}
+
+  /* menu bar: full-width Menu button that opens a list */
+  .mn-in{min-height:0}
+  .menu-btn{display:block;width:100%;margin:0;border:0;border-radius:0;padding:.75rem 4%;text-align:left;font-size:1.05rem;font-weight:600}
+  .mainnav .nav{display:none;position:absolute;left:0;right:0;top:100%;flex-direction:column;background:var(--blue);padding:.5rem 4% 1rem;z-index:30;box-shadow:0 12px 20px rgba(0,0,0,.2);max-height:75vh;overflow-y:auto}
+  .mainnav .nav.open{display:flex}
+  .mainnav .nav>a,.mainnav .nav .sub-toggle{font-size:1.1rem;padding:.8rem 0;text-align:left;border-bottom:1px solid rgba(255,255,255,.2)}
+  .mainnav .nav>a:hover,.mainnav .nav .sub-toggle:hover{background:none;text-decoration:underline}
+
+  /* Programs: tap to open, plain list (no images) */
+  .has-sub{width:100%}
+  .sub{position:static;box-shadow:none;background:transparent;padding:0 0 .5rem 1rem}
+  .mega-in{display:block;width:100%;padding:0}
+  .mega-img,.mega-side{display:none}
+  .mega-links li{border:0}
+  .mainnav .mega-links a{font-size:1rem;padding:.55rem 0}
+
+  /* hero and stat cards */
+  .hs{padding:2.5rem 1.2rem 6.5rem}
+  .hs-btn{display:none}
+  .hs-dots{bottom:5rem}
+  .kpi-wrap{margin-top:-3.5rem}
+  .kpis{grid-template-columns:repeat(2,1fr)}
+  .kpi:last-child{grid-column:1/-1}
+  .kpi b{font-size:1.6rem}
+
+  /* sections */
+  .section{padding:3rem 0}
+  .cards,.foot{grid-template-columns:repeat(2,1fr)}
+  .split{grid-template-columns:1fr;gap:1.5rem}
+  .finder{grid-template-columns:1fr}
+  .notes{gap:1.5rem}
 }
-@media(max-width:520px){.cards,.foot{grid-template-columns:1fr}.story-wrap button{display:none}}
-@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+
+@media(max-width:520px){
+  .cards,.foot{grid-template-columns:1fr}
+  .story-wrap button{display:none}
+  .brand img{height:34px}
+  .enq{font-size:.8rem;padding:.6rem .8rem}
+  .hs h1,.hs h2{font-size:1.7rem}
+  .kpi{padding:1rem .3rem}
+}
