@@ -182,3 +182,25 @@ input:invalid:not(:placeholder-shown){border-color:#b3261e}
   .mainnav .nav>a:hover,.mainnav .sub-toggle:hover{background:rgba(255,255,255,.14);text-decoration:none}
   .mainnav .sub{text-align:left}
 }
+
+/* ---- Nav: larger text, edge-to-edge (desktop) ---- */
+@media(min-width:861px){
+  .mainnav .mn-in{width:100%;max-width:none;padding:0}
+  .mainnav .nav>a,.mainnav .sub-toggle{font-size:1.3rem;padding:1.1rem .5rem}
+}
+
+/* ---- Hero slider with background images ---- */
+.hslider{position:relative;display:grid;min-height:min(62vh,520px);color:#fff;text-align:center;overflow:hidden}
+.hs{grid-area:1/1;display:grid;place-items:center;padding:3rem 3.5rem 7rem;opacity:0;visibility:hidden;transition:opacity .7s;
+ background:linear-gradient(rgba(10,25,45,.5),rgba(10,25,45,.72)),var(--img,none) center/cover #12304f}
+.hs.active{opacity:1;visibility:visible}
+.hs.brain{background:linear-gradient(rgba(10,25,45,.45),rgba(10,25,45,.45)),url('images/brain.svg') center/min(560px,92%) no-repeat,linear-gradient(135deg,#0b2a47,#12304f 55%,#0b7bbd)}
+.hs-in{max-width:760px}
+.hs h1,.hs h2{font-size:clamp(1.9rem,4.2vw,3rem)}
+.hs-btn{position:absolute;top:42%;width:46px;height:46px;border-radius:50%;border:1px solid rgba(255,255,255,.7);background:rgba(10,25,45,.35);color:#fff;font-size:1.7rem;line-height:1;cursor:pointer;z-index:3}
+.hs-btn:hover{background:rgba(10,25,45,.65)}
+.hs-btn.prev{left:2%}.hs-btn.next{right:2%}
+.hs-dots{position:absolute;left:0;right:0;bottom:5.4rem;display:flex;justify-content:center;gap:.5rem;z-index:3}
+.hs-dots button{width:11px;height:11px;border-radius:50%;border:0;padding:0;background:rgba(255,255,255,.5);cursor:pointer}
+.hs-dots button.on{background:#fff;transform:scale(1.25)}
+@media(max-width:860px){.hs{padding:2.5rem 1.2rem 7rem}.hs-btn{display:none}}
