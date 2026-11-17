@@ -18,7 +18,7 @@ a{color:var(--accent)}
 /* ===== Header: top bar ===== */
 .site-header{position:sticky;top:0;z-index:20;background:var(--white);border-bottom:1px solid var(--line)}
 .topbar{display:flex;align-items:right;gap:1rem;min-height:36px;padding-block:.4rem}
-.brand img{height:38px;width:auto;display:block}
+.brand img{height:68px;width:auto;display:block}
 
 /* people: photos with names under them, aligned left beside the logo */
 /* .util{display:flex;gap:1.25rem;align-items:flex-start;margin-left:2rem;margin-right:auto}
@@ -178,7 +178,7 @@ input:invalid:not(:placeholder-shown){border-color:#b3261e}
  .finder{grid-template-columns:1fr}
  .util{display:none}
  .topbar{justify-content:space-between}
- .brand img{height:50px}
+ .brand img{height:32px}
  .menu-btn{display:block}
  .mainnav .nav{display:none;position:absolute;left:0;right:0;top:100%;flex-direction:column;background:var(--blue);padding:1rem 4%;z-index:30}
  .mainnav .nav.open{display:flex}
