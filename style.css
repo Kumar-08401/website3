@@ -176,7 +176,6 @@ input:invalid:not(:placeholder-shown){border-color:#b3261e}
  .cards,.foot{grid-template-columns:repeat(2,1fr)}
  .split{grid-template-columns:1fr;gap:1.5rem}
  .finder{grid-template-columns:1fr}
- .util{display:none}
  .topbar{justify-content:space-between}
  .brand img{height:32px}
  .menu-btn{display:block}
@@ -193,6 +192,10 @@ input:invalid:not(:placeholder-shown){border-color:#b3261e}
  .hs-btn{display:none}
  .kpis{grid-template-columns:repeat(2,1fr)}
  .kpi:last-child{grid-column:1/-1}
+ /*team*/
+ .utilimg{width:44px;height:44px}
+ /*team*/
+
 }
 @media(max-width:520px){.cards,.foot{grid-template-columns:1fr}.story-wrap button{display:none}}
 @media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
