@@ -20,10 +20,14 @@ a{color:var(--accent)}
 .topbar{display:flex;align-items:center;gap:1rem;min-height:56px;padding-block:.4rem}
 .brand img{height:38px;width:auto;display:block}
 /* people: photos with names under them, aligned left beside the logo */
-.util{display:flex;gap:1.25rem;align-items:flex-start;margin-left:2rem;margin-right:auto}
-.util a{display:flex;flex-direction:column;align-items:left;gap:.25rem;text-align:center;text-decoration:none}
+/* .util{display:flex;gap:1.25rem;align-items:flex-start;margin-left:2rem;margin-right:auto}
+.util a{display:flex;flex-direction:column;align-items:center;gap:.25rem;text-align:center;text-decoration:none}
 .util img{width:60px;height:60px;border-radius:8px;object-fit:cover}
-.util span{font-size:.8rem;line-height:1.2;max-width:110px;color:var(--ink);font-weight:600}
+.util span{font-size:.8rem;line-height:1.2;max-width:110px;color:var(--ink);font-weight:600} */
+.util{display:flex;gap:1.25rem;align-items:flex-start}
+.util a{display:flex;flex-direction:column;align-items:center;gap:.25rem;text-align:center;text-decoration:none}
+.util img{width:40px;height:40px;border-radius:50%;object-fit:cover}
+.util span{font-size:.75rem;color:var(--muted);line-height:1.2;max-width:80px}
 .enq{background:var(--orange);color:#fff;font-weight:600;font-size:.9rem;padding:.85rem 1.4rem;text-decoration:none;white-space:nowrap}
 .enq:hover{background:#d9650f}
 
