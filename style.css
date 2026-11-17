@@ -136,7 +136,7 @@ input:invalid:not(:placeholder-shown){border-color:#b3261e}
 @media(max-width:860px){.contact-grid{grid-template-columns:1fr;gap:2rem}}
 
 /* ---- Hero: brain illustration background ---- */
-.hero2{background:url('images/icons/brain.svg') center/min(560px,92%) no-repeat,linear-gradient(135deg,#0b2a47,#12304f 55%,#0b7bbd)}
+.hero2{background:url('images/brain.svg') center/min(560px,92%) no-repeat,linear-gradient(135deg,#0b2a47,#12304f 55%,#0b7bbd)}
 .hero2::before{content:"";position:absolute;inset:0;background:rgba(10,25,45,.45)}
 .hero2{position:relative}
 .hero2>*{position:relative}
@@ -172,3 +172,13 @@ input:invalid:not(:placeholder-shown){border-color:#b3261e}
 .card-head{display:flex;align-items:center;gap:.8rem;margin-bottom:.5rem}
 .card-head h3{margin:0}
 .card-head img{width:56px;height:56px;border-radius:8px;object-fit:cover;flex:none;background:var(--paper)}
+
+/* ---- Main nav: bigger text, links spread across the full bar (desktop) ---- */
+@media(min-width:861px){
+  .mainnav .mn-in{width:100%;padding:0 2%}
+  .mainnav .nav{width:100%;gap:0;justify-content:stretch}
+  .mainnav .nav>a,.mainnav .nav>.has-sub{flex:1;text-align:center}
+  .mainnav .nav>a,.mainnav .sub-toggle{display:block;padding:.85rem .5rem;font-size:1.1rem}
+  .mainnav .nav>a:hover,.mainnav .sub-toggle:hover{background:rgba(255,255,255,.14);text-decoration:none}
+  .mainnav .sub{text-align:left}
+}
