@@ -18,7 +18,7 @@ a{color:var(--accent)}
 /* ===== Header: top bar ===== */
 .site-header{position:sticky;top:0;z-index:20;background:var(--white);border-bottom:1px solid var(--line)}
 .topbar{display:flex;align-items:right;gap:1rem;min-height:36px;padding-block:.4rem}
-.brand img{height:58px;width:auto;display:block}
+.brand img{height:38px;width:auto;display:block}
 
 /* people: photos with names under them, aligned left beside the logo */
 /* .util{display:flex;gap:1.25rem;align-items:flex-start;margin-left:2rem;margin-right:auto}
