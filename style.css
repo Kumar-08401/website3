@@ -16,7 +16,7 @@ a{color:var(--accent)}
 .btn:hover{background:#ffc83d}
 
 /* ===== Header: top bar ===== */
-.site-header{position:sticky;top:0;z-index:20;background:var(--yellow);border-bottom:1px solid var(--line)}
+.site-header{position:sticky;top:0;z-index:20;background:var(--white);border-bottom:1px solid var(--line)}
 .topbar{display:flex;align-items:center;gap:1rem;min-height:46px;padding-block:.4rem}
 .brand img{height:38px;width:auto;display:block}
 /* people: photos with names under them, aligned left beside the logo */
