@@ -63,13 +63,28 @@ a{color:var(--accent)}
 .menu-btn{display:none;background:none;color:#fff;border:1px solid #fff;border-radius:var(--r);padding:.4rem .8rem;font:inherit;margin:.5rem 4%}
 
 /* Programs dropdown */
-.has-sub{position:relative}
+/* .has-sub{position:relative}
 .sub-toggle::after{content:"\25BE";margin-left:.35rem;font-size:1em}
 .sub{display:none;position:absolute;top:100%;left:0;min-width:260px;margin:0;padding:.4rem 0;list-style:none;text-align:left;background:#fff;border-radius:0 0 8px 8px;box-shadow:0 8px 20px rgba(0,0,0,.18);z-index:40}
 .mainnav .nav .sub a{display:flex;align-items:center;gap:.8rem;padding:.6rem 1rem;font-size:1rem;font-weight:500;color:var(--ink)}
 .mainnav .nav .sub a:hover{background:var(--paper)}
 .sub img{width:56px;height:56px;border-radius:8px;object-fit:cover;flex:none;background:var(--paper)}
+.has-sub:hover .sub,.has-sub:focus-within .sub,.has-sub.open .sub{display:block} */
+
+/* Programs mega menu: image left, links middle, image + text right */
+.has-sub{position:static}
+.sub-toggle::after{content:"\25BE";margin-left:.35rem;font-size:1em}
+.sub{display:none;position:absolute;top:100%;left:0;right:0;background:var(--blue);color:#fff;z-index:40;box-shadow:0 12px 24px rgba(0,0,0,.25);text-align:left}
 .has-sub:hover .sub,.has-sub:focus-within .sub,.has-sub.open .sub{display:block}
+.mega-in{width:min(1120px,92%);margin-inline:auto;display:grid;grid-template-columns:1.1fr 1fr 1.2fr;gap:2.5rem;align-items:center;padding:2.5rem 0}
+.mega-img{width:100%;aspect-ratio:3/2;object-fit:cover;border-radius:16px;background:rgba(255,255,255,.15)}
+.mega-links{list-style:none;margin:0;padding:0}
+.mega-links li{border-bottom:1px solid rgba(255,255,255,.3)}
+.mega-links li:last-child{border-bottom:0}
+.mainnav .mega-links a{display:block;padding:.9rem 0;color:#fff;font-size:1.15rem;font-weight:500;text-decoration:none}
+.mainnav .mega-links a:hover{text-decoration:underline;text-underline-offset:4px}
+.mega-side img{display:block;width:200px;aspect-ratio:2/1;object-fit:cover;border-radius:8px;margin-bottom:1rem;background:rgba(255,255,255,.15)}
+.mega-side p{color:#fff;line-height:1.7;font-size:1.05rem}
 
 /* ===== Hero slider ===== */
 .hslider{position:relative;display:grid;min-height:min(62vh,520px);color:#fff;text-align:center;overflow:hidden}
