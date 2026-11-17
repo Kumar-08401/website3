@@ -178,7 +178,7 @@ input:invalid:not(:placeholder-shown){border-color:#b3261e}
  .finder{grid-template-columns:1fr}
  .util{display:none}
  .topbar{justify-content:space-between}
- .brand img{height:32px}
+ .brand img{height:50px}
  .menu-btn{display:block}
  .mainnav .nav{display:none;position:absolute;left:0;right:0;top:100%;flex-direction:column;background:var(--blue);padding:1rem 4%;z-index:30}
  .mainnav .nav.open{display:flex}
