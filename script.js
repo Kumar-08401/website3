@@ -118,30 +118,4 @@
     const open = t.parentElement.classList.toggle('open');
     t.setAttribute('aria-expanded', open);
   }));
-
-  /* UX polish: reveal on scroll, active menu link, progress bar, back-to-top */
-  document.documentElement.classList.add('js');
-  const rv = new IntersectionObserver(es => es.forEach(e => {
-    if (e.isIntersecting) { e.target.classList.add('in'); rv.unobserve(e.target); }
-  }), { threshold: .15 });
-  $$('.section h2, .section .lead, .card, .value, .res-item, .finder, .form, details').forEach((el, n) => {
-    el.classList.add('reveal'); el.style.setProperty('--d', (n % 4) * 80 + 'ms'); rv.observe(el);
-  });
-
-  const navLinks = $$('#nav > a, #nav .sub-toggle');
-  const spy = new IntersectionObserver(es => es.forEach(e => {
-    if (!e.isIntersecting) return;
-    navLinks.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + e.target.id));
-  }), { rootMargin: '-40% 0px -55% 0px' });
-  $$('main section[id]').forEach(sec => spy.observe(sec));
-
-  const bar = $('.progress'), toTop = $('#toTop'), head = $('.site-header');
-  const onScroll = () => {
-    const y = scrollY, max = document.documentElement.scrollHeight - innerHeight;
-    bar.style.width = (max > 0 ? y / max * 100 : 0) + '%';
-    toTop.hidden = y < 600;
-    head.classList.toggle('scrolled', y > 10);
-  };
-  addEventListener('scroll', onScroll, { passive: true }); onScroll();
-  toTop.onclick = () => scrollTo({ top: 0, behavior: 'smooth' });
 })();
