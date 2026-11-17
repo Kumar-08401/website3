@@ -112,10 +112,29 @@
   });
 
   /* Programs dropdown: tap to open on mobile */
-  $$('.sub-toggle').forEach(t => t.addEventListener('click', e => {
-    if (!matchMedia('(max-width: 860px)').matches) return;
-    e.preventDefault();
-    const open = t.parentElement.classList.toggle('open');
-    t.setAttribute('aria-expanded', open);
-  }));
+  // $$('.sub-toggle').forEach(t => t.addEventListener('click', e => {
+  //   if (!matchMedia('(max-width: 860px)').matches) return;
+  //   e.preventDefault();
+  //   const open = t.parentElement.classList.toggle('open');
+  //   t.setAttribute('aria-expanded', open);
+  // }));
+
+  document.querySelectorAll('.sub-toggle').forEach(t => {
+    t.addEventListener('click', e => {
+      if (!window.matchMedia('(max-width: 860px)').matches) return;
+
+      e.preventDefault();
+      e.stopPropagation();
+
+      const parent = t.parentElement;
+      const isOpen = parent.classList.contains('open');
+
+      // Toggle open/close
+      parent.classList.toggle('open', !isOpen);
+
+      // Update accessibility state
+      t.setAttribute('aria-expanded', String(!isOpen));
+    });
+  });
+
 })();
