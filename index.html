@@ -8,33 +8,25 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div class="progress" aria-hidden="true"></div>
 <header class="site-header">
   <div class="container topbar">
     <a class="brand" href="#top"><img src="images/icons/logo.svg" alt="Deekshitha" width="184" height="38"></a>
     <nav class="util" aria-label="Quick links">
-      <a href="#"><img src="images/contacts/team1.jpg" alt="" width="70" height="70">Deekshitha Kothapalli</a>
-      <a href="#"><img src="images/contacts/team2.jpg" alt="" width="70" height="70">Sunitha Kothapalli</a>
+      <a href="#"><img src="images/contacts/team1.jpg" alt="" width="70" height="70"><span>Deekshitha Kothapalli</span></a>
+      <a href="#"><img src="images/contacts/team2.jpg" alt="" width="70" height="70"><span>Sunitha Kothapalli</span></a>
     </nav>
-    <!-- <a class="enq" href="#contact">Enquire Now</a> -->
+    <a class="enq" href="#contact">Enquire Now</a>
   </div>
   <div class="mainnav">
     <div class="container mn-in">
       <button class="menu-btn" aria-expanded="false" aria-controls="nav">Menu</button>
       <nav id="nav" class="nav" aria-label="Main">
-        <!-- <div class="has-sub">
-          <a href="#programs" class="sub-toggle" aria-haspopup="true" aria-expanded="false">Programs</a>
-          <ul class="sub">
-            <li><a href="#programs"><img src="images/programes/school-1.webp" alt="" width="56" height="56" onerror="this.style.visibility='hidden'"><span>Schools</span></a></li>
-            <li><a href="#programs"><img src="images/programes/school-2.webp" alt="" width="56" height="56" onerror="this.style.visibility='hidden'"><span>Junior colleges</span></a></li> -->
-            <!-- <li><a href="#programs"><img src="images/programs/coaching.jpg" alt="" width="56" height="56" onerror="this.style.visibility='hidden'"><span>Coaching centres</span></a></li>
-            <li><a href="#programs"><img src="images/programs/professional-colleges.jpg" alt="" width="56" height="56" onerror="this.style.visibility='hidden'"><span>Professional colleges</span></a></li> -->
-          <!-- </ul> -->
-        <!-- </div> -->
-         <div class="has-sub mega">
+        <div class="has-sub mega">
           <a href="#programs" class="sub-toggle" aria-haspopup="true" aria-expanded="false">Programs</a>
           <div class="sub">
             <div class="mega-in">
-              <img class="mega-img" src="images/programes/school-1.webp" alt="" onerror="this.style.visibility='hidden'">
+              <img class="mega-img" src="images/mega/programs.jpg" alt="" onerror="this.style.visibility='hidden'">
               <ul class="mega-links">
                 <li><a href="#programs">Schools</a></li>
                 <li><a href="#programs">Junior colleges</a></li>
@@ -79,7 +71,7 @@
       <div class="kpi k5"><b data-count="250" data-suffix="+">0</b><span>Cities</span></div>
     </div>
   </section>
-<!-- 
+
   <section id="programs" class="section">
     <div class="container">
       <h2>Programs</h2>
@@ -89,20 +81,6 @@
         <article class="card"><h3>Junior colleges</h3><p>Board and entrance exam preparation together.</p><a href="#">Learn more</a></article>
         <article class="card"><h3>Coaching centres</h3><p>Focused training for engineering and medical entrance exams.</p><a href="#">Learn more</a></article>
         <article class="card"><h3>Professional colleges</h3><p>Degrees built around real workplace skills.</p><a href="#">Learn more</a></article>
-      </div>
-    </div>
-  </section> -->
-
-  
-  <section id="news" class="section news">
-    <div class="container">
-      <h2>News and notices</h2>
-      <p class="lead">Latest updates from Deekshitha. Copy one note below to add a new one.</p>
-      <div class="notes">
-        <article class="note"><time datetime="2026-11-17">17 Nov 2026</time><h3>Admissions open</h3><p>Write the details of your notice here in two or three lines.</p></article>
-        <article class="note"><time datetime="2026-11-10">10 Nov 2026</time><h3>Annual day</h3><p>Add the date, time and place of the event.</p></article>
-        <article class="note"><time datetime="2026-11-01">1 Nov 2026</time><h3>Results announced</h3><p>Share good news about your students and their results.</p></article>
-        <article class="note"><time datetime="2026-10-20">20 Oct 2026</time><h3>New branch</h3><p>Tell visitors about a new centre or a new program.</p></article>
       </div>
     </div>
   </section>
@@ -131,6 +109,19 @@
         <div class="value" style="--c:#07a3b8"><h3>Care</h3><p>Every student is known by name and supported when learning gets hard.</p></div>
         <div class="value" style="--c:#8b6df0"><h3>Curiosity</h3><p>We teach students to ask why, not only to memorize answers.</p></div>
         <div class="value" style="--c:#1fc8a4"><h3>Responsibility</h3><p>We own our results and learn from our mistakes.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="news" class="section news">
+    <div class="container">
+      <h2>News and notices</h2>
+      <p class="lead">Latest updates from Deekshitha. Copy one note below to add a new one.</p>
+      <div class="notes">
+        <article class="note"><time datetime="2026-11-17">17 Nov 2026</time><h3>Admissions open</h3><p>Write the details of your notice here in two or three lines.</p></article>
+        <article class="note"><time datetime="2026-11-10">10 Nov 2026</time><h3>Annual day</h3><p>Add the date, time and place of the event.</p></article>
+        <article class="note"><time datetime="2026-11-01">1 Nov 2026</time><h3>Results announced</h3><p>Share good news about your students and their results.</p></article>
+        <article class="note"><time datetime="2026-10-20">20 Oct 2026</time><h3>New branch</h3><p>Tell visitors about a new centre or a new program.</p></article>
       </div>
     </div>
   </section>
@@ -195,6 +186,7 @@
   </div>
   <p class="copy">&copy; 2026 Deekshitha PVT LTD</p>
 </footer>
+<button id="toTop" class="to-top" aria-label="Back to top" hidden>&uarr;</button>
 <script src="script.js"></script>
 </body>
 </html>
