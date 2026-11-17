@@ -199,31 +199,54 @@
 
 /******chatbot*****/
 
-<!--End of Tawk.to Script-->
-
 <section class="footer">
 
-    <div class="box-container">
+    <!-- Custom Chat Avatar -->
+    <div class="custom-chat-avatar"
+         id="customChatAvatar"
+         onclick="openLiveChat()">
 
-      <div class="box">
-        <h3>kumar S's Portfolio</h3>
-        <p>Thank you for visiting my portfolio website. Connect with me over socials. <br /> <br /> Keep Rising 🚀.
-          Connect with me over live chat!</p>
-      </div>
-        <!--Start of Tawk.to Script-->
-        <script type="text/javascript">
-        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-        (function(){
-        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-        s1.async=true;
-        s1.src='https://embed.tawk.to/69c33e59ffb4f81c353b5573/1jkhan3jo';
-        s1.charset='UTF-8';
-        s1.setAttribute('crossorigin','*');
-        s0.parentNode.insertBefore(s1,s0);
-        })();
-        </script>
+        <img src="images/chat-avatar.png" alt="Live Chat">
+
+        <span class="chat-online-dot"></span>
+
+        <span class="chat-tooltip">
+            Chat with me!
+        </span>
+
     </div>
-  </section>
+
+</section>
+
+<!-- Start of Tawk.to Script -->
+<script type="text/javascript">
+var Tawk_API = Tawk_API || {};
+var Tawk_LoadStart = new Date();
+
+(function(){
+    var s1 = document.createElement("script");
+    var s0 = document.getElementsByTagName("script")[0];
+
+    s1.async = true;
+    s1.src = 'https://embed.tawk.to/69c33e59ffb4f81c353b5573/1jkhan3jo';
+    s1.charset = 'UTF-8';
+    s1.setAttribute('crossorigin', '*');
+
+    s0.parentNode.insertBefore(s1, s0);
+})();
+</script>
+<!-- End of Tawk.to Script -->
+
+<!-- Open Chat -->
+<script>
+function openLiveChat() {
+    if (window.Tawk_API &&
+        typeof window.Tawk_API.maximize === "function") {
+        window.Tawk_API.maximize();
+    }
+}
+</script>
+
 /*******chatbot****/
 
 
