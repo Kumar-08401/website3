@@ -82,9 +82,12 @@ input:invalid:not(:placeholder-shown){border-color:#b3261e}
 .site-header{background:var(--white)}
 .topbar{display:flex;align-items:center;justify-content:space-between;gap:1rem;min-height:56px}
 .brand{font:700 1.35rem var(--serif);color:var(--ink);text-decoration:none}
+/* .util{display:flex;gap:1.5rem;margin-left:auto;margin-right:1.5rem}
+.util a{font-size:.85rem;color:var(--muted);text-decoration:none}
+.util a:hover{color:var(--ink)} */
 
 .util{display:flex;gap:1.25rem;align-items:flex-start}
-.util a{display:flex;flex-direction:column;align-items:center;gap:.25rem;text-align:center;text-decoration:none}
+.util a{display:flex;flex-direction:column;align-items:left;gap:.25rem;text-align:center;text-decoration:none}
 .util img{width:40px;height:40px;border-radius:50%;object-fit:cover}
 .util span{font-size:.75rem;color:var(--muted);line-height:1.2;max-width:80px}
 
